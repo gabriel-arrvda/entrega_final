@@ -1,13 +1,13 @@
-version: '3'
+version: "1"
 
 services:
   database:
     image: postgres
     environment:
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: papi
+      POSTGRES_DB: entrega_final
     volumes:
-    - db-volume:/var/lib/postgresql/data
+      - db-volume:/var/lib/postgresql/data
 
   api:
     image: lelesd2m2s10/praticando-api
